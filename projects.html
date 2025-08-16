@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Projects & Experience — Pradip Pandey</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* ===== Projects Styling ===== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.project-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid transparent;
+}
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+}
+
+/* Category colours */
+.cat-os { border-top-color: #4CAF50; }      /* Operating systems */
+.cat-net { border-top-color: #2196F3; }    /* Networking */
+.cat-cloud { border-top-color: #9C27B0; }  /* Cloud / Virtualization */
+.cat-dev { border-top-color: #FF9800; }    /* Development */
+.cat-sec { border-top-color: #F44336; }    /* Cybersecurity */
+.cat-support { border-top-color: #3F51B5;}/* IT Support */
+
+.project-card h3 {
+    margin-top: 0;
+    color: #222;
+}
+.project-card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.4;
+}
+.project-card a {
+    display: inline-block;
+    margin-top: 0.8rem;
+    padding: 0.4rem 0.8rem;
+    background: #2196F3;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+.project-card a:hover {
+    background: #0b7dda;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Pradip Pandey</h1>
+    <nav>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html" class="active">Projects</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Projects & Labs</h2>
+    <div class="projects-grid">
+
+        <div class="project-card cat-os">
+            <h3>Linux Server Administration</h3>
+            <p>Deployed and managed Ubuntu and CentOS servers for user account management, file sharing, and service hosting. Configured permissions, automated backups, and implemented shell scripting for system monitoring.</p>
+            <a href="skills.html#operating-systems">See related skills</a>
+        </div>
+
+        <div class="project-card cat-cloud">
+            <h3>Virtualization & Infrastructure Labs</h3>
+            <p>Built virtual lab environments using VirtualBox and VMware to simulate multi‑OS networks for testing and training. Configured virtual switches, NAT, and cloned VM templates for rapid deployment.</p>
+            <a href="skills.html#virtualization-cloud">See related skills</a>
+        </div>
+
+        <div class="project-card cat-net">
+            <h3>Windows Server & Active Directory Management</h3>
+            <p>Installed and configured Windows Server with AD, Group Policy, DNS, DHCP, and access controls. Integrated Defender AV and configured Windows Firewall for network protection.</p>
+            <a href="skills.html#networking-security">See related skills</a>
+        </div>
+
+        <div class="project-card cat-sec">
+            <h3>IT Project Management Simulation</h3>
+            <p>Led a simulated IT upgrade project using Waterfall & Agile. Managed timelines, stakeholder communications, and documented risk assessments for a server migration plan.</p>
+            <a href="skills.html#it-cybersecurity-management">See related skills</a>
+        </div>
+
+        <div class="project-card cat-dev">
+            <h3>Python Automation & Scripting</h3>
+            <p>Developed Python scripts to automate log analysis, parse CSV network reports, and send alerts for anomalies. Built CLI utilities for system checks and file management automation.</p>
+            <a href="skills.html#programming-development">See related skills</a>
+        </div>
+
+        <div class="project-card cat-dev">
+            <h3>Full Stack Web Development</h3>
+            <p>Created responsive websites using HTML, CSS, JS, and Flask. Integrated authentication, CRUD operations, and basic security against SQL injection and XSS.</p>
+            <a href="skills.html#programming-development">See related skills</a>
+        </div>
+
+        <div class="project-card cat-sec">
+            <h3>System Analysis & Design (University)</h3>
+            <p>Produced SDLC documentation, including requirements gathering, UML diagrams, DB design, and functional testing procedures.</p>
+            <a href="skills.html#it-cybersecurity-management">See related skills</a>
+        </div>
+
+        <div class="project-card cat-net">
+            <h3>Advanced Routing & Switching</h3>
+            <p>Configured Cisco routers/switches for VLANs, OSPF, EIGRP, and implemented ACLs and port security to restrict unauthorized access.</p>
+            <a href="skills.html#networking-security">See related skills</a>
+        </div>
+
+        <div class="project-card cat-net">
+            <h3>Microsoft OS Access Control Management</h3>
+            <p>Applied NTFS permissions, user rights assignments, and multi-level access policies in Windows environments to uphold least privilege.</p>
+            <a href="skills.html#networking-security">See related skills</a>
+        </div>
+
+        <div class="project-card cat-sec">
+            <h3>Cybersecurity Management Simulation</h3>
+            <p>Developed security policies and incident response plans for a simulated organisation. Conducted risk assessments and ISO 27001 compliance checks.</p>
+            <a href="skills.html#it-cybersecurity-management">See related skills</a>
+        </div>
+
+        <div class="project-card cat-support">
+            <h3>IT Help Desk Support Lab</h3>
+            <p>Provided L1 & L2 support in a simulated service desk, resolving hardware/software issues, imaging devices, and handling installations.</p>
+            <a href="skills.html#it-support-troubleshooting">See related skills</a>
+        </div>
+
+        <div class="project-card cat-sec">
+            <h3>Firewall & Endpoint Security Implementation</h3>
+            <p>Configured advanced Windows Firewall rules, tested application whitelisting, and deployed Microsoft Defender for Endpoint features.</p>
+            <a href="skills.html#networking-security">See related skills</a>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Pradip Pandey — Cybersecurity & IT Support Specialist
+</footer>
+
+</body>
+</html>

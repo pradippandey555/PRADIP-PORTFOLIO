@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Skills — Pradip Pandey</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+/* ===== Skills Page Styling ===== */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.skill-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-top: 4px solid transparent;
+}
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 22px rgba(0,0,0,0.15);
+}
+
+/* Category colors */
+.cat-os { border-top-color: #4CAF50; }
+.cat-net { border-top-color: #2196F3; }
+.cat-cloud { border-top-color: #9C27B0; }
+.cat-dev { border-top-color: #FF9800; }
+.cat-support { border-top-color: #3F51B5; }
+.cat-sec { border-top-color: #F44336; }
+.cat-soft { border-top-color: #009688; }
+
+.skill-card h3 {
+    margin-top: 0;
+    color: #222;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+.skill-card h3 i {
+    color: inherit;
+}
+.skill-card ul {
+    padding-left: 1.2rem;
+    margin: 0.8rem 0 0;
+}
+.skill-card ul li {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 0.4rem;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Pradip Pandey</h1>
+    <nav>
+        <a href="about.html">About</a>
+        <a href="skills.html" class="active">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+        
+        <div class="skill-card cat-os" id="operating-systems">
+            <h3><i class="fa-solid fa-desktop"></i> Operating Systems</h3>
+            <ul>
+                <li>Windows Server 2019/2022: AD, Group Policy, DNS, DHCP</li>
+                <li>Windows 10/11 installation, administration & troubleshooting</li>
+                <li>Linux (Ubuntu, CentOS): Server config, shell scripting</li>
+                <li>macOS basic administration & cross‑platform support</li>
+            </ul>
+        </div>
+
+        <div class="skill-card cat-net" id="networking-security">
+            <h3><i class="fa-solid fa-network-wired"></i> Networking & Security</h3>
+            <ul>
+                <li>Cisco routing & switching: VLANs, OSPF, EIGRP, ACLs</li>
+                <li>Firewall configuration: Windows Firewall, Cisco ASA basics</li>
+                <li>VPN setup: Site‑to‑site & remote access</li>
+                <li>Access control in Microsoft environments</li>
+                <li>Network monitoring (SIEM, NetFlow)</li>
+                <li>Endpoint protection & security hardening</li>
+            </ul>
+        </div>
+
+        <div class="skill-card cat-cloud" id="virtualization-cloud">
+            <h3><i class="fa-solid fa-cloud"></i> Virtualization & Cloud</h3>
+            <ul>
+                <li>VMware & VirtualBox lab creation</li>
+                <li>Hyper‑V basics</li>
+                <li>Azure & AWS fundamentals (VMs, storage, RBAC)</li>
+                <li>VM deployment, snapshots, optimisation</li>
+            </ul>
+        </div>
+
+        <div class="skill-card cat-dev" id="programming-development">
+            <h3><i class="fa-solid fa-code"></i> Programming & Development</h3>
+            <ul>
+                <li>Python automation, log parsing, CSV data processing</li>
+                <li>JavaScript, HTML5, CSS3 for responsive design</li>
+                <li>Flask web app development & deployment</li>
+                <li>Secure coding aligned with OWASP Top 10</li>
+            </ul>
+        </div>
+
+        <div class="skill-card cat-support" id="it-support-troubleshooting">
+            <h3><i class="fa-solid fa-headset"></i> IT Support & Troubleshooting</h3>
+            <ul>
+                <li>Level 1 & 2 help desk support</li>
+                <li>Incident logging & resolution tracking</li>
+                <li>Hardware diagnostics, repairs, maintenance</li>
+                <li>Peripheral & network device configuration</li>
+                <li>Software installation & version management</li>
+            </ul>
+        </div>
+
+        <div class="skill-card cat-sec" id="it-cybersecurity-management">
+            <h3><i class="fa-solid fa-shield-halved"></i> IT & Cybersecurity Management</h3>
+            <ul>
+                <li>Risk assessment & security policy development</li>
+                <li>Incident response planning & reporting</li>
+                <li>System analysis & SDLC documentation</li>
+                <li>IT asset lifecycle management & compliance</li>
+            </ul>
+        </div>
+
+        <div class="skill-card cat-soft" id="soft-skills">
+            <h3><i class="fa-solid fa-people-group"></i> Soft Skills</h3>
+            <ul>
+                <li>Clear communication & customer service</li>
+                <li>Problem‑solving under time pressure</li>
+                <li>Adaptability across technologies</li>
+                <li>Collaborative teamwork & knowledge sharing</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Pradip Pandey — Cybersecurity & IT Support Specialist
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Education — Pradip Pandey</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* ===== Education Styling with Logos ===== */
+.education-timeline {
+    position: relative;
+    margin: 2rem auto;
+    padding-left: 20px;
+    max-width: 900px;
+}
+
+.education-timeline::before {
+    content: '';
+    position: absolute;
+    left: 35px;
+    top: 0;
+    bottom: 0;
+    width: 4px;
+    background: linear-gradient(to bottom, #4CAF50, #2196F3);
+    border-radius: 2px;
+}
+
+.edu-card {
+    position: relative;
+    margin-bottom: 2.5rem;
+    padding: 1.5rem 1.5rem 1.5rem 80px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.edu-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.edu-logo {
+    position: absolute;
+    top: 20px;
+    left: -8px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid #fff;
+    background: #fff;
+    box-shadow: 0 0 0 3px #2196F3;
+}
+
+.edu-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.edu-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.edu-header h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #222;
+}
+
+.edu-date {
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #4CAF50;
+}
+
+.edu-degree {
+    margin: 0.4rem 0 0.8rem 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.edu-projects {
+    list-style: none;
+    padding: 0;
+    margin: 0.5rem 0 0;
+}
+
+.edu-projects li {
+    margin-bottom: 0.3rem;
+    font-size: 0.9rem;
+    color: #444;
+}
+
+@media (max-width: 600px) {
+    .edu-card {
+        padding-left: 70px;
+    }
+    .edu-header {
+        flex-direction: column;
+    }
+    .edu-date {
+        margin-top: 0.3rem;
+    }
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Pradip Pandey</h1>
+    <nav>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="education.html" class="active">Education</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Education</h2>
+    <div class="education-timeline">
+
+        <div class="edu-card">
+            <div class="edu-header">
+                <h3>Charles Sturt University</h3>
+                <span class="edu-date">2023 – 2026</span>
+            </div>
+            <p class="edu-degree">Bachelor of Information Technology (Cybersecurity Major)</p>
+            <ul class="edu-projects">
+                <li>Secure Network Design for enterprise environments</li>
+                <li>Firewall Implementation & traffic filtering strategies</li>
+                <li>Web Security Audits aligned with OWASP Top 10</li>
+            </ul>
+        </div>
+
+        <div class="edu-card">
+            <div class="edu-header">
+                <h3>TAFE NSW</h3>
+                <span class="edu-date">2018 – 2020</span>
+            </div>
+            <p class="edu-degree">Diploma, Certificate III & IV of Networking</p>
+            <ul class="edu-projects">
+                <li>LAN/WAN network deployment and troubleshooting</li>
+                <li>Wireless security configuration and optimisation</li>
+                <li>Server installation and administration (Windows & Linux)</li>
+            </ul>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    &copy; 2025 Pradip Pandey — Cybersecurity Specialist
+</footer>
+
+</body>
+</html>

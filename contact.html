@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Pradip Pandey</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+<style>
+.contact-section {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    text-align: center;
+}
+.contact-intro {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    color: #444;
+}
+.contact-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+.contact-card {
+    background: #fff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.contact-card i {
+    font-size: 2rem;
+    color: #2196F3;
+    margin-bottom: 0.8rem;
+}
+.contact-card a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333;
+}
+.contact-card p {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* ===== Contact Form ===== */
+.contact-form {
+    margin-top: 2.5rem;
+    text-align: left;
+}
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 0.8rem;
+    margin-bottom: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 0.95rem;
+}
+.contact-form button {
+    background: #2196F3;
+    color: white;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+.contact-form button:hover {
+    background: #0b7dda;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Pradip Pandey</h1>
+    <nav>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html">Certifications</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html" class="active">Contact</a>
+    </nav>
+</header>
+
+<section class="contact-section">
+    <h2>Contact Me</h2>
+    <p class="contact-intro">
+        Whether you’re looking to fill a role in <strong>IT support, networking, or cybersecurity</strong>, 
+        or just need expert tech help — I’m here to connect.
+    </p>
+
+    <div class="contact-cards">
+        <div class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:pradippandey555@gmail.com">pradippandey555@gmail.com</a>
+            <p>Email me directly for job offers or collaborations.</p>
+        </div>
+
+        <div class="contact-card">
+            <i class="fa-brands fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/pradip-pandey-317997195" target="_blank">LinkedIn</a>
+            <p>View my professional profile and connect with me.</p>
+        </div>
+
+        <div class="contact-card">
+            <i class="fa-brands fa-github"></i>
+            <a href="https://github.com/pradippandey555" target="_blank">GitHub</a>
+            <p>Explore my projects, scripts, and technical solutions.</p>
+        </div>
+    </div>
+
+    <!-- Basic mailto form -->
+    <form class="contact-form" action="mailto:pradippandey555@gmail.com" method="POST" enctype="text/plain">
+        <h3>Send a Message</h3>
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+        <button type="submit">📩 Send Message</button>
+    </form>
+</section>
+
+<footer>
+    &copy; 2025 Pradip Pandey — Cybersecurity & IT Support Specialist
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Certifications — Pradip Pandey</title>
+<link rel="stylesheet" href="style.css">
+
+<style>
+/* ====== Certifications Styling ====== */
+.cert-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.cert-item {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    overflow: hidden;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    cursor: pointer;
+}
+
+.cert-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+.cert-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.cert-info {
+    padding: 1rem;
+    background: #fafafa;
+}
+
+.cert-info h3 {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+.cert-info p {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* ====== Lightbox ====== */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 50px;
+    left: 0; top: 0;
+    width: 100%; height: 100%;
+    overflow: auto;
+    background: rgba(0,0,0,0.9);
+}
+
+.lightbox-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+}
+
+.lightbox:target {
+    display: block;
+}
+
+.close {
+    position: absolute;
+    top: 30px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.close:hover {
+    color: #ccc;
+}
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Pradip Pandey</h1>
+    <nav>
+        <a href="about.html">About</a>
+        <a href="skills.html">Skills</a>
+        <a href="projects.html">Projects</a>
+        <a href="certifications.html" class="active">Certifications</a>
+        <a href="education.html">Education</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<section>
+    <h2>Certifications</h2>
+    <div class="cert-list">
+
+        <a href="#img1" class="cert-item" aria-label="View Network Analysis Using Wireshark 3 Certificate">
+            <img src="Wireshark 3.jpg" alt="Certificate: Network Analysis Using Wireshark 3">
+            <div class="cert-info">
+                <h3>Network Analysis Using Wireshark 3</h3>
+                <p>Practical packet capture and traffic analysis skills.</p>
+            </div>
+        </a>
+
+        <a href="#img2" class="cert-item" aria-label="View Wireless Penetration Testing Certificate">
+            <img src="Kali Wireless Pen Test.jpg" alt="Certificate: Wireless Penetration Using Kali Linux">
+            <div class="cert-info">
+                <h3>Wireless Penetration Using Kali Linux</h3>
+                <p>Hands‑on wireless network auditing and security testing.</p>
+            </div>
+        </a>
+
+        <a href="#img3" class="cert-item" aria-label="View Cyber Security Fundamentals Certificate">
+            <img src="Cyber.jpg" alt="Certificate: Cyber Security Fundamentals">
+            <div class="cert-info">
+                <h3>Cyber Security Fundamentals</h3>
+                <p>Core concepts in security frameworks and risk mitigation.</p>
+            </div>
+        </a>
+
+        <a href="#img4" class="cert-item" aria-label="View Metasploit Testing Recipes Certificate">
+            <img src="Metasploit Testing Recipes.jpg" alt="Certificate: Metasploit Testing Recipes">
+            <div class="cert-info">
+                <h3>Metasploit Testing Recipes</h3>
+                <p>Exploitation and vulnerability assessment techniques.</p>
+            </div>
+        </a>
+
+        <a href="#img5" class="cert-item" aria-label="View Outlook Essentials Certificate">
+            <img src="Outlook.jpg" alt="Certificate: Outlook Essentials">
+            <div class="cert-info">
+                <h3>Outlook Essentials</h3>
+                <p>Efficient email, calendar, and task management skills.</p>
+            </div>
+        </a>
+
+        <a href="#img6" class="cert-item" aria-label="View Network Scanning With NMAP Certificate">
+            <img src="Network Scanning With NMAP.jpg" alt="Certificate: Network Scanning With NMAP">
+            <div class="cert-info">
+                <h3>Network Scanning With NMAP</h3>
+                <p>Proficiency in network reconnaissance and mapping.</p>
+            </div>
+        </a>
+
+        <a href="#img7" class="cert-item" aria-label="View Certified Ethical Hacker Certificate">
+            <img src="cert2.jpg" alt="Certificate: Certified Ethical Hacker (In Progress)">
+            <div class="cert-info">
+                <h3>Certified Ethical Hacker (In Progress)</h3>
+                <p>Advanced penetration testing and ethical hacking concepts.</p>
+            </div>
+        </a>
+
+    </div>
+</section>
+
+<!-- ====== Lightbox Modals ====== -->
+<div id="img1" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="Wireshark 3.jpg" alt="Network Analysis Using Wireshark 3 Certificate Large View">
+</div>
+
+<div id="img2" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="Kali Wireless Pen Test.jpg" alt="Wireless Penetration Using Kali Linux Certificate Large View">
+</div>
+
+<div id="img3" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="Cyber.jpg" alt="Cyber Security Fundamentals Certificate Large View">
+</div>
+
+<div id="img4" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="Metasploit Testing Recipes.jpg" alt="Metasploit Testing Recipes Certificate Large View">
+</div>
+
+<div id="img5" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="Outlook.jpg" alt="Outlook Essentials Certificate Large View">
+</div>
+
+<div id="img6" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="Network Scanning With NMAP.jpg" alt="Network Scanning With NMAP Certificate Large View">
+</div>
+
+<div id="img7" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img class="lightbox-content" src="cert2.jpg" alt="Certified Ethical Hacker Certificate Large View">
+</div>
+
+<footer>
+    &copy; 2025 Pradip Pandey — Cybersecurity Specialist
+</footer>
+
+</body>
+</html>
